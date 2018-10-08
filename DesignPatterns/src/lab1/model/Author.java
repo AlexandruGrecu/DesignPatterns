@@ -18,9 +18,7 @@ public class Author {
     this.name = name;
   }
 
-  @Override
-  public String toString() {
-    return "Author [name=" + name + "]";
+  public void print() {
+    System.out.println("Author: " + name);
   }
-
 }

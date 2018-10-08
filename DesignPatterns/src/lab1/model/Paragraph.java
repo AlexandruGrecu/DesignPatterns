@@ -11,7 +11,7 @@ package lab1.model;
  * @version $Revision: $, $Date: $, $Author: $
  */
 
-public class Paragraph {
+public class Paragraph extends Element {
   private String text;
 
   public Paragraph(String text) {
@@ -19,8 +19,8 @@ public class Paragraph {
   }
 
   @Override
-  public String toString() {
-    return "Paragraph [text=" + text + "]";
+  public void print() {
+    System.out.println(text);
   }
 
 }

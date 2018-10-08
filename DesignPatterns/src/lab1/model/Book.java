@@ -23,6 +23,7 @@ public class Book {
     this.title = title;
   }
 
+  @SuppressWarnings("hiding")
   public void addAuthor(Author author) {
     this.author = author;
   }
@@ -36,9 +37,11 @@ public class Book {
     return chapters.get(indexOfChapter);
   }
 
-  @Override
-  public String toString() {
-    return "Book [title=" + title + ", author=" + author + ", chapters=" + chapters + "]";
+  public void print() {
+    System.out.println("Book: " + title);
+    author.print();
+    for (Chapter chapter : chapters) {
+      chapter.print();
+    }
   }
-
 }

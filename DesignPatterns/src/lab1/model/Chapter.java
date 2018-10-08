@@ -31,9 +31,11 @@ public class Chapter {
     return subChapters.get(indexOfSubChapter);
   }
 
-  @Override
-  public String toString() {
-    return "Chapter [name=" + name + ", subChapters=" + subChapters + "]";
+  public void print() {
+    System.out.println("Chapter: " + name);
+    for (SubChapter subChapter : subChapters) {
+      subChapter.print();
+    }
   }
 
 }

@@ -22,7 +22,7 @@ public class Client {
     Author author = new Author("Ion Creanga");
 
     book.addAuthor(author);
-
+    //CHAPTER 1
     int indexOfChapterOne = book.createChapter("Capitolul 1");
     Chapter chapter1 = book.getChapter(indexOfChapterOne);
     int indexOfSubChapterOneOne = chapter1.createSubChapter("Subcapitolul 1.1");
@@ -34,8 +34,24 @@ public class Client {
     scOneOne.createNewParagraph("Paragraph 4");
     scOneOne.createNewTable("Table 1");
     scOneOne.createNewParagraph("Paragraph 5");
+    int indexOfSubChapterOneTwo = chapter1.createSubChapter("Subcapitolul 1.2");
+    SubChapter scOneTwo = chapter1.getSubChapter(indexOfSubChapterOneTwo);
+    scOneTwo.createNewParagraph("Paragraph 1");
+    scOneTwo.createNewParagraph("Paragraph 2");
+    scOneTwo.createNewParagraph("Paragraph 3");
+    scOneTwo.createNewImage("Image 1");
+    scOneTwo.createNewParagraph("Paragraph 4");
+    scOneTwo.createNewTable("Table 1");
+    scOneTwo.createNewParagraph("Paragraph 5");
 
-    System.out.println(book);
+    //CHAPTER 2
+    int indexOfChapterTwo = book.createChapter("Capitolul 2");
+    Chapter chapter2 = book.getChapter(indexOfChapterOne);
+    int indexOfSubChapterTwoOne = chapter1.createSubChapter("Subcapitolul 1.1");
+    SubChapter scTwoOne = chapter1.getSubChapter(indexOfSubChapterTwoOne);
+    scTwoOne.createNewParagraph("Paragraph 1");
+
+    book.print();
 
   }
 }

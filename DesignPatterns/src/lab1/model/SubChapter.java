@@ -16,29 +16,29 @@ import java.util.List;
 
 public class SubChapter {
   private String name;
-  private List<Paragraph> paragraphs = new ArrayList<>();
-  private List<Image> images = new ArrayList<>();
-  private List<Table> tables = new ArrayList<>();
+  List<Element> elements = new ArrayList<>();
 
   public SubChapter(String subChapterName) {
     name = subChapterName;
   }
 
   public void createNewParagraph(String text) {
-    paragraphs.add(new Paragraph(text));
+    elements.add(new Paragraph(text));
   }
 
   public void createNewImage(String imageName) {
-    images.add(new Image(imageName));
+    elements.add(new Image(imageName));
   }
 
   public void createNewTable(String title) {
-    tables.add(new Table(title));
+    elements.add(new Table(title));
   }
 
-  @Override
-  public String toString() {
-    return "SubChapter [name=" + name + ", paragraphs=" + paragraphs + ", images=" + images + ", tables=" + tables + "]";
+  public void print() {
+    System.out.println("Subchapter: " + name);
+    for (Element element : elements) {
+      element.print();
+    }
   }
 
 }

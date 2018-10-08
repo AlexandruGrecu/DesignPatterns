@@ -11,16 +11,6 @@ package lab1.model;
  * @version $Revision: $, $Date: $, $Author: $
  */
 
-public class Table extends Element {
-  private String title;
-
-  public Table(String title) {
-    this.title = title;
-  }
-
-  @Override
-  public void print() {
-    System.out.println(title);
-  }
-
+public abstract class Element {
+  public abstract void print();
 }

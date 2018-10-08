@@ -11,7 +11,7 @@ package lab1.model;
  * @version $Revision: $, $Date: $, $Author: $
  */
 
-public class Image {
+public class Image extends Element {
   private String imageName;
 
   public Image(String imageName) {
@@ -19,8 +19,7 @@ public class Image {
   }
 
   @Override
-  public String toString() {
-    return "Image [imageName=" + imageName + "]";
+  public void print() {
+    System.out.println(imageName);
   }
-
 }
