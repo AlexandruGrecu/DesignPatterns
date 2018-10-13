@@ -4,7 +4,7 @@
  * $Header: $
  */
 
-package lab1.model;
+package bookproject.model;
 
 /**
  * @author <a href="mailto:bario@ssi-schaefer-noell.com">bario</a>

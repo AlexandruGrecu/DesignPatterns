@@ -4,23 +4,23 @@
  * $Header: $
  */
 
-package lab1.model;
+package bookproject.model;
 
 /**
  * @author <a href="mailto:bario@ssi-schaefer-noell.com">bario</a>
  * @version $Revision: $, $Date: $, $Author: $
  */
 
-public class Table extends Element {
-  private String title;
+public class Paragraph extends Element {
+  private String text;
 
-  public Table(String title) {
-    this.title = title;
+  public Paragraph(String text) {
+    this.text = text;
   }
 
   @Override
   public void print() {
-    System.out.println(title);
+    System.out.println(text);
   }
 
 }

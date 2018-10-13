@@ -4,13 +4,21 @@
  * $Header: $
  */
 
-package lab1.model;
+package bookproject.model;
 
 /**
  * @author <a href="mailto:bario@ssi-schaefer-noell.com">bario</a>
  * @version $Revision: $, $Date: $, $Author: $
  */
 
-public class TableOfContents {
+public class Author {
+  private String name;
 
+  public Author(String name) {
+    this.name = name;
+  }
+
+  public void print() {
+    System.out.println("Author: " + name);
+  }
 }

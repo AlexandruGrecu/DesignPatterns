@@ -4,12 +4,12 @@
  * $Header: $
  */
 
-package lab1;
+package bookproject;
 
-import lab1.model.Author;
-import lab1.model.Book;
-import lab1.model.Chapter;
-import lab1.model.SubChapter;
+import bookproject.model.Author;
+import bookproject.model.Book;
+import bookproject.model.Chapter;
+import bookproject.model.SubChapter;
 
 /**
  * @author <a href="mailto:bario@ssi-schaefer-noell.com">bario</a>

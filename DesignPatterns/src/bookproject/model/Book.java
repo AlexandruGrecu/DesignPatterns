@@ -4,7 +4,7 @@
  * $Header: $
  */
 
-package lab1.model;
+package bookproject.model;
 
 import java.util.ArrayList;
 import java.util.List;
