@@ -16,6 +16,7 @@ import java.util.List;
 
 public class Section implements Element {
   private String title;
+  private List<Element> content = new ArrayList<Element>();
 
   public String getName() {
     return title;
@@ -24,8 +25,6 @@ public class Section implements Element {
   public void setName(String name) {
     this.title = name;
   }
-
-  private List<Element> content = new ArrayList<Element>();
 
   public Section(String name) {
     this.title = name;
