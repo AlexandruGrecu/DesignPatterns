@@ -6,6 +6,7 @@
 
 package composite.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -15,22 +16,19 @@ import java.util.List;
 
 public class Book implements Element {
   private Author author;
-  private List<Element> content;
+  private List<Element> content = new ArrayList<Element>();
   private String name;
 
-  public Book(String name) {
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
     this.name = name;
   }
 
-  public static void main(String[] args) {
-    Book noapteBuna = new Book("Noapte buna copii.!");
-    Section cap1 = new Section("Capitolul 1.");
-    cap1.add(new Paragraph("Text 1"));
-    cap1.add(new Paragraph("Text 2"));
-    cap1.add(new Image("Image 1"));
-    noapteBuna.add(new Paragraph("Multumesc"));
-    noapteBuna.add(cap1);
-
+  public Book(String name) {
+    this.name = name;
   }
 
   @Override
@@ -53,5 +51,19 @@ public class Book implements Element {
     for (Element element : content) {
       element.print();
     }
+  }
+
+  /**
+   * @return the author
+   */
+  public Author getAuthor() {
+    return author;
+  }
+
+  /**
+   * @param author the author to set
+   */
+  public void setAuthor(Author author) {
+    this.author = author;
   }
 }

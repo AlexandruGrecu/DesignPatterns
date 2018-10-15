@@ -25,17 +25,17 @@ public class Table implements Element {
 
   @Override
   public void add(Element element) {
-    // TODO Auto-generated method stub
+    System.out.println("ERORR");
   }
 
   @Override
   public void remove(Element element) {
-    // TODO Auto-generated method stub
-
+    System.out.println("ERORR");
   }
 
   @Override
   public Element getElement(int index) {
+    System.out.println("ERORR");
     return null;
   }
 
