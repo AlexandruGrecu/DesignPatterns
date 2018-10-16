@@ -53,16 +53,10 @@ public class Book implements Element {
     }
   }
 
-  /**
-   * @return the author
-   */
   public Author getAuthor() {
     return author;
   }
 
-  /**
-   * @param author the author to set
-   */
   public void setAuthor(Author author) {
     this.author = author;
   }
