@@ -30,6 +30,8 @@ public class Client {
     noapteBuna.add(cap1);
     noapteBuna.add(new Paragraph("Multumesc"));
     noapteBuna.print();
+    
+    
   }
 
 }
